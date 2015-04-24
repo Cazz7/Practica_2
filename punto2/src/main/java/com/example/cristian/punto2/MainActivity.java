@@ -87,28 +87,28 @@ public class MainActivity extends ActionBarActivity {
 
         boolean checked = ((RadioButton) view).isChecked();
 
-            // Check which radio button was clicked
-            switch (view.getId()) {
-                case R.id.rSumar:
+    // Check which radio button was clicked
+    switch (view.getId()) {
+        case R.id.rSumar:
 
-                    if (checked)
-                        opc=1;
-                    break;
-                case R.id.rRestar:
-                    if (checked)
-                        opc=2;
-                    break;
-                case R.id.rMultiplicar:
-                    if (checked)
-                        opc=3;
-                    break;
-                case R.id.rDividir:
-                    if (checked)
-                        opc=4;
-                    break;
-            }
-
+            if (checked)
+                opc=1;
+            break;
+        case R.id.rRestar:
+            if (checked)
+                opc=2;
+            break;
+        case R.id.rMultiplicar:
+            if (checked)
+                opc=3;
+            break;
+        case R.id.rDividir:
+            if (checked)
+                opc=4;
+            break;
     }
+
+}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
