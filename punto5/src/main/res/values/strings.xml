@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">EjemploGUI</string>
+    <string name="hello_world">Hello Android!</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombre">Nombre</string>
+    <string name="hint_nombre">Digite el nombre</string>
+    <string name="correo">Correo</string>
+    <string name="hint_correo">Digite el correo</string>
+    <string name="tel">Teléfono</string>
+    <string name="hint_tel">Digite el Teléfono</string>
+    <string name="boton">OK</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="fecha">Fecha</string>
+
+
+    <string name="genero">Género</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenimo">Femenino</string>
+
+    <string name="ciudad">Ciudad</string>
+
+    <string name="lectura">Lectura</string>
+    <string name="deportes">Deportes</string>
+    <string name="cine">Cine</string>
+    <string name="otros">Otros</string>
+    <string name="checkLectura">checkLectura</string>
+    <string name="checkDeportes">checkDeportes</string>
+    <string name="checkCine">checkCine</string>
+    <string name="checkOtros">checkOtros</string>
+
+    <string name="sexo">Género</string>
+    <string name="city">Ciudad</string>
+    <string-array name="ciudades">
+        <item>Leticia</item>
+        <item>Medellín</item>
+        <item>Arauca</item>
+        <item>Barranquilla</item>
+        <item>Cartagena</item>
+        <item>Tunja</item>
+        <item>Manizales</item>
+        <item>Florencia</item>
+        <item>Yopal</item>
+        <item>Popayan</item>
+        <item>Valledupar</item>
+        <item>Quibdó</item>
+        <item>Montería</item>
+        <item>Bogotá</item>
+        <item>Puerto Inírida</item>
+        <item>San José del Guaviare</item>
+        <item>Neiva</item>
+        <item>Riohacha</item>
+        <item>Santa Marta</item>
+        <item>Villavicencio</item>
+        <item>San Juan de Pasto</item>
+        <item>Cúcuta</item>
+        <item>Mocoa</item>
+        <item>Armenia</item>
+        <item>Pereira</item>
+        <item>San Andrés</item>
+        <item>Bucaramanga</item>
+        <item>Sincelejo</item>
+        <item>Ibagué</item>
+        <item>Cali</item>
+        <item>Mitú</item>
+        <item>Puerto Carreño</item>
+    </string-array>
+
+</resources>

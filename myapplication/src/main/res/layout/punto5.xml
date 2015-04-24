@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:textSize="20dp"
+            android:textColor="@color/blue"
+            android:layout_weight="1.8"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nombre"
+            android:textSize="20dp"
+            android:inputType="textPersonName"
+            android:layout_weight="1"
+            android:id="@+id/eNombre"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/correo"
+            android:textSize="20dp"
+            android:textColor="@color/blue"
+            android:layout_weight="1.8"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_correo"
+            android:textSize="20dp"
+            android:inputType="textEmailAddress"
+            android:layout_weight="1"
+            android:id="@+id/eCorreo"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tel"
+            android:textSize="20dp"
+            android:textColor="@color/blue"
+            android:layout_weight="1.8"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_tel"
+            android:textSize="20dp"
+            android:inputType="phone"
+            android:layout_weight="1"
+            android:id="@+id/eTel"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/boton"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/boton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textSize="20dp"
+        android:id="@+id/tNombre"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correo"
+        android:textSize="20dp"
+        android:id="@+id/tCorreo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/tel"
+        android:id="@+id/tTel"/>
+
+
+
+</LinearLayout>
