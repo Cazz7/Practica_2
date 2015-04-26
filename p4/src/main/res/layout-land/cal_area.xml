@@ -173,7 +173,7 @@
                     android:inputType="numberDecimal"
                     android:ems="10"
                     android:id="@+id/eBase"
-                    android:hint="Base (Triángulo)" />
+                    android:hint="@string/hintTrianguloBase" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -181,7 +181,7 @@
                     android:inputType="numberDecimal"
                     android:ems="10"
                     android:id="@+id/eAltura"
-                    android:hint="Altura(Triángulo)" />
+                    android:hint="@string/hintTrianguloAltura" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -189,7 +189,7 @@
                     android:inputType="numberDecimal"
                     android:ems="10"
                     android:id="@+id/eRadio"
-                    android:hint="Radio(Círculo)" />
+                    android:hint="@string/hintCirculo" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -197,7 +197,7 @@
                     android:inputType="numberDecimal"
                     android:ems="10"
                     android:id="@+id/eLado1"
-                    android:hint="Lado(Cuadrado-Rectángulo)" />
+                    android:hint="@string/hintLado1" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -205,7 +205,7 @@
                     android:inputType="numberDecimal"
                     android:ems="10"
                     android:id="@+id/eLado2"
-                    android:hint="Lado2(Rectángulo)" />
+                    android:hint="@string/hintLado2" />
 
                 <LinearLayout
                     android:layout_width="fill_parent"
