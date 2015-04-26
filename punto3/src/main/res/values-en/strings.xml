@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">Punto2</string>
+    <string name="numero1">Number 1</string>
+    <string name="numero2">Number 2</string>
+    <string name="num1">Enter number 1</string>
+    <string name="num2">Enter number 2</string>
+    <string name="calcular">Calculate</string>
+    <string name="suma">Add</string>
+    <string name="resta">Substract</string>
+    <string name="división">Divide</string>
+    <string name="multiplicación">Multiply</string>
+    <string name="resultado">Result</string>
+    <string name="seleccione">Select type of operation</string>
+    <string name="notas">Grades</string>
+    <string name="quices">Quiz 15%</string>
+    <string name="exposiciones">Presentations 10%</string>
+    <string name="practicas">Laboratory 40%</string>
+    <string name="proyecto">Final Proyect 35%</string>
+    <string name="notafinal">Final grade</string>
+    <string name="onRadioButtonClicked">onRadioButtonClicked</string>
+
+</resources>
