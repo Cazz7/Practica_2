@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Punto4_CAZZ</string>
+    <string name="action_settings">Settings</string>
+    <string name="resultado">Result</string>
+    <string name="calcular">Operate</string>
+    <string name="titulo_figura">Figure</string>
+    <string name="tituloParametro">Parameters</string>
+    <string name="onRadioButtonClicked">onRadioButtonClicked</string>
+    <string name="cuadrado">Square</string>
+    <string name="triangulo">Triangle</string>
+    <string name="circulo">Círcle</string>
+    <string name="rectangulo">Rectangle</string>
+</resources>
