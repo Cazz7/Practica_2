@@ -15,11 +15,21 @@
     <string name="resultado">Resultado</string>
     <string name="seleccione">Seleccione el tipo de operación</string>
     <string name="notas">Notas</string>
-    <string name="quices">Quices 15%</string>
-    <string name="exposiciones">Exposiciones 10%</string>
-    <string name="practicas">Prácticas de laboratorio 40%</string>
-    <string name="proyecto">Proyecto final 35%</string>
+    <string name="quices">Quices</string>
+    <string name="exposiciones">Exposiciones</string>
+    <string name="practicas">Prácticas de laboratorio</string>
+    <string name="proyecto">Proyecto final</string>
     <string name="notafinal">Nota Final</string>
     <string name="onRadioButtonClicked">onRadioButtonClicked</string>
+    <string name="Inicio">Bienvenido a la calculadora de notas Baby</string>
+    <string name="destruction">Destruction</string>
+    <string name="resume">Resume</string>
+    <string name="comienzo">Comienzo</string>
+    <string name="pause">Pausa</string>
+    <string name="title_activity_about">about</string>
+    <string name="tAbout">Aplicación para calcular las notas del curso de programación de móviles</string>
+    <string name="aboutText">Acerca de</string>
+    <string name="title_activity_set_perc">SetPerc</string>
+    <string name="aceptar">Aceptar</string>
 
 </resources>

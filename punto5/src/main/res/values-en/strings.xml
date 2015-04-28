@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Punto_5 CAZZ</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombre">Name</string>
+    <string name="hint_nombre">Enter your name</string>
+    <string name="correo">E-mail</string>
+    <string name="hint_correo">Enter your E-mail</string>
+    <string name="tel">Phone</string>
+    <string name="hint_tel">Enter your phone number</string>
+    <string name="boton">Send</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="fecha">Date</string>
+
+
+    <string name="genero">Gender</string>
+    <string name="masculino">Masculine</string>
+    <string name="femenimo">Femenine</string>
+
+    <string name="ciudad">City</string>
+
+    <string name="lectura">Reading</string>
+    <string name="deportes">Sports</string>
+    <string name="cine">Movies</string>
+    <string name="otros">Others</string>
+    <string name="checkLectura">checkLectura</string>
+    <string name="checkDeportes">checkDeportes</string>
+    <string name="checkCine">checkCine</string>
+    <string name="checkOtros">checkOtros</string>
+
+    <string name="sexo">Gender</string>
+    <string name="city">City</string>
+    <string-array name="ciudades">
+        <item>Leticia</item>
+        <item>Medellín</item>
+        <item>Arauca</item>
+        <item>Barranquilla</item>
+        <item>Cartagena</item>
+        <item>Tunja</item>
+        <item>Manizales</item>
+        <item>Florencia</item>
+        <item>Yopal</item>
+        <item>Popayan</item>
+        <item>Valledupar</item>
+        <item>Quibdó</item>
+        <item>Montería</item>
+        <item>Bogotá</item>
+        <item>Puerto Inírida</item>
+        <item>San José del Guaviare</item>
+        <item>Neiva</item>
+        <item>Riohacha</item>
+        <item>Santa Marta</item>
+        <item>Villavicencio</item>
+        <item>San Juan de Pasto</item>
+        <item>Cúcuta</item>
+        <item>Mocoa</item>
+        <item>Armenia</item>
+        <item>Pereira</item>
+        <item>San Andrés</item>
+        <item>Bucaramanga</item>
+        <item>Sincelejo</item>
+        <item>Ibagué</item>
+        <item>Cali</item>
+        <item>Mitú</item>
+        <item>Puerto Carreño</item>
+    </string-array>
+
+</resources>

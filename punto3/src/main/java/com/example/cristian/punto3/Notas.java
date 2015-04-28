@@ -1,5 +1,6 @@
 package com.example.cristian.punto3;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,6 +20,7 @@ public class Notas extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Toast.makeText(Notas.this,getResources().getString(R.string.Inicio), Toast.LENGTH_LONG).show();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.notas);
 
@@ -81,9 +83,12 @@ public class Notas extends ActionBarActivity {
     }
 
 
+
     @Override
+    //Este método solamente me crea el menu
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        //Aquí me le puso el nombre
         getMenuInflater().inflate(R.menu.menu_notas, menu);
         return true;
     }
@@ -97,9 +102,15 @@ public class Notas extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+
+
         }
+
+
 
         return super.onOptionsItemSelected(item);
     }
+
 }
+
+

@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/calculadora_icon"
         android:label="punto2_CAZZ"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/Base.Theme.AppCompat.DialogWhenLarge" >
         <activity
             android:name=".MainActivity"
             android:label="punto2_CAZZ" >

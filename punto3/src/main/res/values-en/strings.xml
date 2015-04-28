@@ -19,5 +19,8 @@
     <string name="proyecto">Final Proyect 35%</string>
     <string name="notafinal">Final grade</string>
     <string name="onRadioButtonClicked">onRadioButtonClicked</string>
+    <string name="tAbout">Application that calculates the total grade of this course</string>
+    <string name="aboutText">Acerca de</string>
+    <string name="aceptar">Accept</string>
 
 </resources>

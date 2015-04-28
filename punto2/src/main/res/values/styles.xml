@@ -5,4 +5,21 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="GeneralLayoutTheme" parent="android:Theme.Black">
+
+    </style>
+
+    <style name="TextViewStyle_1" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="InputDataLayout" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:background">@color/lightgray</item>
+
+    </style>
+
 </resources>
