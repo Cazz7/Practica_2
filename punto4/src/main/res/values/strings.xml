@@ -1,0 +1,28 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Geometría</string>
+    <string name="resultado">Resultado</string>
+    <string name="calcular">Calcular</string>
+    <string name="titulo_figura">Figura</string>
+    <string name="tituloParametro">Parámetros</string>
+    <string name="onRadioButtonClicked">onRadioButtonClicked</string>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="triangulo">Triángulo</string>
+    <string name="circulo">Círculo</string>
+    <string name="rectangulo">Rectángulo</string>
+
+
+    <string name="hintTrianguloBase">Base (Triángulo)</string>
+    <string name="hintTrianguloAltura">Altura (Triángulo)</string>
+    <string name="hintCirculo">Radio (Círculo)</string>
+    <string name="hintLado1">Lado (Cuadrado-Rectángulo)</string>
+    <string name="hintLado2">Lado2 (Rectángulo)</string>
+
+    <string name="errorLadoCuadrado">Por favor ingrese el lado del cuadrado</string>
+    <string name="errorAlturaTriangulo">Por favor ingrese la altura del triángulo</string>
+    <string name="errorBaseTriangulo">Por favor ingrese la altura del triángulo</string>
+    <string name="errorRadioCirculo">Por favor ingrese el radio del círculo</string>
+    <string name="errorLargoRectangulo">Por favor ingrese el largo del rectángulo</string>
+    <string name="errorAnchoRectangulo">Por favor ingrese el ancho del rectángulo</string>
+
+</resources>

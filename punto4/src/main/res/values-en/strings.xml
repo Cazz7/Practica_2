@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Geometry</string>
+    <string name="action_settings">Settings</string>
+    <string name="resultado">Result</string>
+    <string name="calcular">Operate</string>
+    <string name="titulo_figura">Figure</string>
+    <string name="tituloParametro">Parameters</string>
+    <string name="onRadioButtonClicked">onRadioButtonClicked</string>
+    <string name="cuadrado">Square</string>
+    <string name="triangulo">Triangle</string>
+    <string name="circulo">Círcle</string>
+    <string name="rectangulo">Rectangle</string>
+
+    <string name="hintTrianguloBase">Base (Triangle)</string>
+    <string name="hintTrianguloAltura">Height (Triangle)</string>
+    <string name="hintCirculo">Radius (Circle)</string>
+    <string name="hintLado1">Side (Square-Rectangle)</string>
+    <string name="hintLado2">Side 2 (Rectangle)</string>
+
+    <string name="errorLadoCuadrado">Please enter the side length of the square</string>
+    <string name="errorAlturaTriangulo">Please enter the height of the triangle</string>
+    <string name="errorBaseTriangulo">Please enter the base of the triangle</string>
+    <string name="errorRadioCirculo">Please enter the radius of the circle</string>
+    <string name="errorLargoRectangulo">Please enter the length of the rectangle</string>
+    <string name="errorAnchoRectangulo">Please enter the width of the rectangle</string>
+</resources>
