@@ -1,8 +1,10 @@
 package com.example.cristian.punto2;
 
+import android.os.PersistableBundle;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,13 +23,15 @@ public class MainActivity extends ActionBarActivity {
     float num1;
     float num2;
     float result;
+    TextView eResultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculadora);
 
-        final TextView eResultado = (TextView) findViewById(R.id.tResultado);
+
+        eResultado = (TextView) findViewById(R.id.tResultado);
         final EditText eNumero1 = (EditText) findViewById(R.id.eNum1);
         final EditText eNumero2 = (EditText) findViewById(R.id.eNum2);
 
@@ -40,13 +44,13 @@ public class MainActivity extends ActionBarActivity {
 
 
                 if (eNumero1.getText().toString().matches("")) {
-                    Toast.makeText(MainActivity.this, "No ingresaste el número 1", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,getResources().getString(R.string.alerta1), Toast.LENGTH_LONG).show();
                     opc=0;
                     return;
                 }
 
                 else if (eNumero2.getText().toString().matches("")) {
-                    Toast.makeText(MainActivity.this, "No ingresaste el número 2", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,getResources().getString(R.string.alerta2), Toast.LENGTH_LONG).show();
                     opc=0;
                     return;
                 }
@@ -54,34 +58,48 @@ public class MainActivity extends ActionBarActivity {
                 else {
                     num1 = Float.parseFloat(eNumero1.getText().toString());
                     num2 = Float.parseFloat(eNumero2.getText().toString());
-                    switch (opc) {
-                        case 1:
-                            result = num1 + num2;
-                            eResultado.setText(Float.toString(result));
-                            break;
-                        case 2:
-                            result = num1 - num2;
-                            eResultado.setText(Float.toString(result));
-                            break;
-                        case 3:
-                            result = num1 * num2;
-                            eResultado.setText(Float.toString(result));
-                            break;
-                        case 4:
-                            result = num1 / num2;
-                            eResultado.setText(Float.toString(result));
-                            break;
-                        default:
-                            break;
 
-                    }
+                        switch (opc) {
+                            case 1:
+                                result = num1 + num2;
+                                eResultado.setText(Float.toString(result));
+                                break;
+                            case 2:
+                                result = num1 - num2;
+                                eResultado.setText(Float.toString(result));
+                                break;
+                            case 3:
+                                result = num1 * num2;
+                                eResultado.setText(Float.toString(result));
+                                break;
+                            case 4:
+                                result = num1 / num2;
+                                eResultado.setText(Float.toString(result));
+                                break;
+                            default:
+                                break;
+
+                        }
+
                 }
             }
 
         });
 
     }
-    //fin onCreate
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("YourTextViewTextIdentifier", eResultado.getText().toString());
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        eResultado.setText(savedInstanceState.getString("YourTextViewTextIdentifier"));
+    }
 
     public void onRadioButtonClicked(View view) {
 

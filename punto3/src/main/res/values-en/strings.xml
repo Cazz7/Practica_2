@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">Grades</string>
+    <string name="num1">Enter number 1</string>
+    <string name="num2">Enter number 2</string>
+    <string name="calcular">Calculate</string>
+    <string name="suma">Add</string>
+    <string name="resta">Substract</string>
+    <string name="división">Divide</string>
+    <string name="multiplicación">Multiply</string>
+    <string name="resultado">Result</string>
+    <string name="seleccione">Select type of operation</string>
+    <string name="notas">Grades</string>
+    <string name="quices">Quizzes</string>
+    <string name="exposiciones">Presentations</string>
+    <string name="practicas">Laboratory</string>
+    <string name="proyecto">Final Project</string>
+    <string name="notafinal">Final Grade</string>
+    <string name="onRadioButtonClicked">onRadioButtonClicked</string>
+
+    <string name="toastEmptyQuiz">Quizzes grade is missing</string>
+    <string name="toastEmptyPresentations">Presentations grade is missing</string>
+    <string name="toastEmptyLab">Laboratory grade is missing</string>
+    <string name="toastEmptyProject">Final Project grade is missing</string>
+
+    <string name="toastGreater5">Grades must be lesser than 5</string>
+    <string name="toastLesser5">Grades must be greater than 0</string>
+
+</resources>

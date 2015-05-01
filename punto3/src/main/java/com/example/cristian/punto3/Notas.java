@@ -16,6 +16,7 @@ public class Notas extends ActionBarActivity {
     //Variables donde se guardarán las notas y la calificación final
     int flagMas5=0;
     float quices, exposiciones, practicas, proyecto, notaFinal;
+    TextView tbResultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,7 @@ public class Notas extends ActionBarActivity {
         final EditText ebExpos = (EditText) findViewById(R.id.eExpos);
         final EditText ebPracticas =  (EditText) findViewById(R.id.ePracticas);
         final EditText ebProyecto =  (EditText) findViewById(R.id.eProyecto);
-        final TextView tbResultado = (TextView) findViewById(R.id.tNotaFinal);
+        tbResultado = (TextView) findViewById(R.id.tNotaFinal);
 
         Button bbCalcular = (Button) findViewById(R.id.bCalcular);
 
@@ -34,20 +35,20 @@ public class Notas extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 if (ebQuices.getText().toString().matches("")) {
-                    Toast.makeText(Notas.this, "Ingrese la nota correspondiente a los quices", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Notas.this,getResources().getString(R.string.toastEmptyQuiz), Toast.LENGTH_LONG).show();
                      return;
                 }
 
                 else if (ebExpos.getText().toString().matches("")) {
-                    Toast.makeText(Notas.this, "Ingrese la nota correspondiente a las exposiciones", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Notas.this,getResources().getString(R.string.toastEmptyPresentations), Toast.LENGTH_LONG).show();
                     return;
                 }
                 else if (ebPracticas.getText().toString().matches("")) {
-                    Toast.makeText(Notas.this, "Ingrese la nota correspondiente a las prácticas de laboratorio", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Notas.this,getResources().getString(R.string.toastEmptyLab), Toast.LENGTH_LONG).show();
                     return;
                 }
                 else if (ebProyecto.getText().toString().matches("")) {
-                    Toast.makeText(Notas.this, "Ingrese la nota correspondiente al proyecto", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Notas.this,getResources().getString(R.string.toastEmptyProject), Toast.LENGTH_LONG).show();
                     return;
                 }
                 else{
@@ -57,13 +58,13 @@ public class Notas extends ActionBarActivity {
                     proyecto = Float.parseFloat(ebProyecto.getText().toString());
 
                     if (quices > 5 || exposiciones > 5 || practicas > 5 || proyecto > 5){
-                        Toast.makeText(Notas.this, "Las notas deben ser iguales o menores a 5", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Notas.this,getResources().getString(R.string.toastGreater5), Toast.LENGTH_SHORT).show();
                         flagMas5=1;
                         return;
                     }
 
                     else if(quices < 0 || exposiciones < 0 || practicas < 0 || proyecto < 0){
-                        Toast.makeText(Notas.this, "Las notas constan de números positivos", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Notas.this,getResources().getString(R.string.toastLesser5), Toast.LENGTH_SHORT).show();
                         flagMas5=1;
                         return;
                     }
@@ -80,6 +81,18 @@ public class Notas extends ActionBarActivity {
         });
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("YourTextViewTextIdentifier", tbResultado.getText().toString());
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        tbResultado.setText(savedInstanceState.getString("YourTextViewTextIdentifier"));
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

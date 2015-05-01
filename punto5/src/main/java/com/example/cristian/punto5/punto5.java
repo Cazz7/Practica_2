@@ -41,6 +41,13 @@ public class punto5 extends ActionBarActivity {
     String strLectura="";
     String strCine="";
     String strOtros="";
+    TextView tFecha;
+    TextView tName;
+    TextView tMail;
+    TextView tTel;
+    TextView tGen;
+    TextView tHobbies;
+    TextView tCiudad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,13 +57,13 @@ public class punto5 extends ActionBarActivity {
         final EditText eNombre = (EditText) findViewById(R.id.eNombre);
         final EditText eCorreo = (EditText) findViewById(R.id.eCorreo);
         final EditText eTelefono = (EditText) findViewById(R.id.eTel);
-        final TextView tFecha = (TextView) findViewById(R.id.tFecha);
-        final TextView tName = (TextView) findViewById(R.id.tNombre);
-        final TextView tMail = (TextView) findViewById(R.id.tCorreo);
-        final TextView tTel = (TextView) findViewById(R.id.tTelefono);
-        final TextView tGen = (TextView) findViewById(R.id.tGenero);
-        final TextView tHobbies = (TextView) findViewById(R.id.tHobbies);
-        final TextView tCiudad = (TextView) findViewById(R.id.tCiudad);
+        tFecha = (TextView) findViewById(R.id.tFecha);
+        tName = (TextView) findViewById(R.id.tNombre);
+        tMail = (TextView) findViewById(R.id.tCorreo);
+        tTel = (TextView) findViewById(R.id.tTelefono);
+        tGen = (TextView) findViewById(R.id.tGenero);
+        tHobbies = (TextView) findViewById(R.id.tHobbies);
+        tCiudad = (TextView) findViewById(R.id.tCiudad);
         final DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker);
         final Spinner sCiudad = (Spinner) findViewById(R.id.sCiudades);
 
@@ -85,22 +92,22 @@ public class punto5 extends ActionBarActivity {
 
                 if (cDeportes.isChecked()) {
                     //cDeportes.setChecked(false);
-                    strDeporte="Deportes";
+                    strDeporte=getResources().getString(R.string.deportes);
                 }else strDeporte="";
 
                 if (cCine.isChecked()) {
                    // cCine.setChecked(false);
-                    strCine="Cine";
+                    strCine=getResources().getString(R.string.cine);
                 }else strCine="";
 
                 if (cLectura.isChecked()) {
                   //  cLectura.setChecked(false);
-                    strLectura="Lectura";
+                    strLectura=getResources().getString(R.string.lectura);
                 }else strLectura="";
 
                 if (cOtros.isChecked()) {
                //     cOtros.setChecked(false);
-                    strOtros="Otros";
+                    strOtros=getResources().getString(R.string.otros);
                 }else strOtros="";
 
                 switch(flagGen){
@@ -133,10 +140,33 @@ public class punto5 extends ActionBarActivity {
 
     }
 
-   /* public void check(){
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("YourTextViewTextIdentifierName", tName.getText().toString());
+        outState.putString("YourTextViewTextIdentifierMail", tMail.getText().toString());
+        outState.putString("YourTextViewTextIdentifierTel", tTel.getText().toString());
+        outState.putString("YourTextViewTextIdentifierGen", tGen.getText().toString());
+        outState.putString("YourTextViewTextIdentifierFecha", tFecha.getText().toString());
+        outState.putString("YourTextViewTextIdentifierCiudad", tCiudad.getText().toString());
+        outState.putString("YourTextViewTextIdentifierHobbies", tHobbies.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        tName.setText(savedInstanceState.getString("YourTextViewTextIdentifierName"));
+        tMail.setText(savedInstanceState.getString("YourTextViewTextIdentifierMail"));
+        tTel.setText(savedInstanceState.getString("YourTextViewTextIdentifierTel"));
+        tGen.setText(savedInstanceState.getString("YourTextViewTextIdentifierGen"));
+        tFecha.setText(savedInstanceState.getString("YourTextViewTextIdentifierFecha"));
+        tCiudad.setText(savedInstanceState.getString("YourTextViewTextIdentifierCiudad"));
+        tHobbies.setText(savedInstanceState.getString("YourTextViewTextIdentifierHobbies"));
+    }
 
 
-    }*/
 
         // Check which radio button was clicked
         public void onRadioButtonClicked(View view) {

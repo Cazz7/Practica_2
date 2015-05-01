@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+       >
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -11,12 +11,9 @@
         android:layout_weight="20">
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:textSize="24dp"
-            android:gravity="center"
-            android:textColor="@color/green"
+
+            style="@style/TextDisplay"
             android:text="@string/numero1"/>
 
         <EditText
@@ -25,7 +22,7 @@
             android:layout_weight="0.8"
             android:id="@+id/eNum1"
             android:gravity="center"
-            android:textSize="22dp"
+            android:textSize="18dp"
             android:hint="@string/num1"
             android:inputType="numberDecimal|numberSigned" />
 
@@ -38,12 +35,9 @@
         android:layout_weight="20">
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:textSize="24dp"
-            android:gravity="center"
-            android:textColor="@color/green"
+
+            style="@style/TextDisplay"
             android:text="@string/numero2"/>
 
         <EditText
@@ -52,7 +46,7 @@
             android:layout_weight="0.8"
             android:id="@+id/eNum2"
             android:gravity="center"
-            android:textSize="22dp"
+            android:textSize="18dp"
             android:hint="@string/num2"
             android:inputType="numberDecimal|numberSigned" />
 
@@ -77,7 +71,7 @@
                 android:layout_height="50dp"
                 android:textSize="22dp"
                 android:gravity="center"
-                android:textColor="@color/blue"
+                android:textColor="@color/darkturquoise"
                 android:text="@string/seleccione"
                 />
 
@@ -98,13 +92,10 @@
                 android:orientation="horizontal"
                 >
 
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="1">
+
 
                     <RadioButton
-                        android:layout_width="160dp"
+                        android:layout_width="140dp"
                         android:layout_height="50dp"
                         android:id="@+id/rSumar"
                         android:textSize="22dp"
@@ -113,21 +104,15 @@
                         android:checked="false" />
 
                     <RadioButton
-                        android:layout_width="160dp"
+                        android:layout_width="140dp"
                         android:layout_height="50dp"
                         android:id="@+id/rRestar"
                         android:textSize="22dp"
                         android:text="@string/resta"
                         android:onClick="@string/onRadioButtonClicked" />
-                    </LinearLayout>
 
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="1">
                     <RadioButton
-                        android:layout_width="160dp"
+                        android:layout_width="140dp"
                         android:layout_height="50dp"
                         android:id="@+id/rDividir"
                         android:textSize="22dp"
@@ -135,13 +120,12 @@
                         android:onClick="@string/onRadioButtonClicked" />
 
                     <RadioButton
-                        android:layout_width="160dp"
+                        android:layout_width="140dp"
                         android:layout_height="50dp"
                         android:id="@+id/rMultiplicar"
                         android:textSize="22dp"
                         android:text="@string/multiplicación"
                         android:onClick="@string/onRadioButtonClicked" />
-                    </LinearLayout>
 
             </RadioGroup>
 

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="numero1">1st Number</string>
+    <string name="numero2">2nd Number</string>
+    <string name="num1">Enter first number</string>
+    <string name="num2">Enter 2nd number</string>
+    <string name="calcular">Operate</string>
+    <string name="suma">Add</string>
+    <string name="resta">Substract</string>
+    <string name="división">Divide</string>
+    <string name="multiplicación">Multiply</string>
+    <string name="resultado">Result</string>
+    <string name="seleccione">Select type of operation</string>
+    <string name="onRadioButtonClicked">onRadioButtonClicked</string>
+
+
+    <string name="alerta1">You should enter number 1</string>
+    <string name="alerta2">You should enter number 2</string>
+</resources>
